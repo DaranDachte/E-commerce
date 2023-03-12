@@ -1,4 +1,4 @@
-import { Group, ActionIcon, Anchor } from "@mantine/core";
+import { Group, ActionIcon } from "@mantine/core";
 import { NavLink } from "react-router-dom";
 import {
   IconBrandLinkedin,
