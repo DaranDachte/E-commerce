@@ -1,4 +1,4 @@
-import { Title, Text, Button, Container, Group } from "@mantine/core";
+import { Title, Text, Container, Group } from "@mantine/core";
 import { NavLink } from "react-router-dom";
 import { useStyles } from "./NotFound.style";
 
