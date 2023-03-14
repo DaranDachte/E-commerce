@@ -8,6 +8,7 @@ import {
 
 import { useStyles } from "./AppFooter.style";
 
+//import ReactLogo from "./logo.svg";
 const links = [
   { link: "/", label: "Catalog" },
   { link: "/about", label: "About" },
@@ -26,8 +27,6 @@ const AppFooter = () => {
   return (
     <footer className={classes.footer}>
       <div className={classes.inner}>
-        <p>LOGO</p>
-
         <Group className={classes.links}>{items}</Group>
 
         <Group spacing="xs" position="right" noWrap>
