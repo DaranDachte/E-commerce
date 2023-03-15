@@ -1,5 +1,11 @@
+import CardCarousel from "../../components/CardCarousel";
+
 const Catalog = () => {
-  return <div>Catalog</div>;
+  return (
+    <div>
+      <CardCarousel />
+    </div>
+  );
 };
 
 export default Catalog;

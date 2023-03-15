@@ -11,7 +11,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { HEADER_HEIGHT } from "./constants";
 import { useStyles } from "./AppHeader.style";
-
+import Logo from "../Logo";
 const links = [
   {
     label: "Catalog",
@@ -51,7 +51,7 @@ const AppHeader = () => {
   return (
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container className={classes.header}>
-        <p>LOGO</p>
+        <Logo />
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>

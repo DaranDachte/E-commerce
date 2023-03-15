@@ -5,10 +5,9 @@ import {
   IconBrandGithub,
   IconMail,
 } from "@tabler/icons-react";
-
 import { useStyles } from "./AppFooter.style";
+import Logo from "../Logo";
 
-//import ReactLogo from "./logo.svg";
 const links = [
   { link: "/", label: "Catalog" },
   { link: "/about", label: "About" },
@@ -27,6 +26,7 @@ const AppFooter = () => {
   return (
     <footer className={classes.footer}>
       <div className={classes.inner}>
+        <Logo />
         <Group className={classes.links}>{items}</Group>
 
         <Group spacing="xs" position="right" noWrap>
