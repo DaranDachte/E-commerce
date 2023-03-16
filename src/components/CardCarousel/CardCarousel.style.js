@@ -1,10 +1,19 @@
 import { createStyles } from "@mantine/core";
 
 export const useStyles = createStyles((theme) => ({
-  slide: {
+  image: {
     width: "100%",
     height: "100%",
-    objectFit: "cover",
+    objectFit: "contain",
     objectPosition: "center",
+  },
+  card: {
+    display: "flex",
+  },
+  imageWrapper: {
+    flex: 4,
+  },
+  werbung: {
+    flex: 1,
   },
 }));
