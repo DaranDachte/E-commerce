@@ -5,6 +5,10 @@ export const useStyles = createStyles(() => {
     logo: {
       width: "32px",
       height: "32px",
+      backgroundColor: "#FFDDAA",
+      marginBottom: "10px",
+      borderRadius: "5px",
+      border: "2px solid black",
     },
   };
 });
