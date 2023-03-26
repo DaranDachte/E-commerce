@@ -2,11 +2,14 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import CategoriesList from "../CategoriesList";
 import ProductsList from "../ProductsList";
+import { useStyles } from "./CatalogBody.style";
+
 const CatalogBody = () => {
   const [categories, setCategories] = useState([]);
   const [activeCategory, setActiveCategory] = useState("");
   const [products, setProducts] = useState([]);
   const [error, setError] = useState("");
+  const { classes } = useStyles();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -50,7 +53,7 @@ const CatalogBody = () => {
   }
 
   return (
-    <div>
+    <div className={classes.wrapper}>
       <CategoriesList
         categories={categories}
         activeCategory={activeCategory}
