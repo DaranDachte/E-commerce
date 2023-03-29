@@ -1,22 +1,16 @@
-import { useEffect, useState } from "react";
 import { Box, Text, Group } from "@mantine/core";
 import { IconListSearch } from "@tabler/icons-react";
 import { useStyles } from "./CategoriesList.style";
 
-const CategoriesList = ({ categories }) => {
+const CategoriesList = ({ categories, activeCategory, onCategoryClick }) => {
   const { classes, cx } = useStyles();
-  const [activeCategory, setActiveCategory] = useState("");
 
-  useEffect(() => {
-    !!categories.length && setActiveCategory(categories[0]);
-  }, [categories]);
-
-  const onCategoryClick = (category) => {
-    setActiveCategory(category);
+  const onCategoryClickHandler = (category) => {
+    onCategoryClick(category);
   };
 
   return (
-    <div>
+    <div className={classes.wrapper}>
       <Group mb="md">
         <IconListSearch size="1.1rem" stroke={1.5} />
         <Text>Categories</Text>
@@ -25,7 +19,7 @@ const CategoriesList = ({ categories }) => {
         categories.map((category) => {
           return (
             <Box
-              onClick={(event) => onCategoryClick(category)}
+              onClick={(event) => onCategoryClickHandler(category)}
               key={category}
               className={cx(classes.category, {
                 [classes.categoryActive]: activeCategory === category,
