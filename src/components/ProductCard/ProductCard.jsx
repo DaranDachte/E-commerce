@@ -1,14 +1,19 @@
-import { Card, Image, Text, Group, Badge, Center, Button } from "@mantine/core";
+import { Card, Image, Text, Group, Badge, Button } from "@mantine/core";
 import { IconShoppingCartPlus } from "@tabler/icons-react";
 import { useStyles } from "./ProductCard.style";
 
 const ProductCard = ({ product }) => {
-  const { classes } = useStyles();
+  const { classes, cx } = useStyles();
 
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
-        <Image src={product.images[0]} alt={product.title} />
+        <Image
+          height={150}
+          fit="contain"
+          src={product.images[0]}
+          alt={product.title}
+        />
       </Card.Section>
 
       <Group position="apart" mt="md">
@@ -18,7 +23,7 @@ const ProductCard = ({ product }) => {
         <Badge variant="outline">{product.discountPercentage}% off</Badge>
       </Group>
 
-      <Card.Section className={classes.section} mt="md">
+      <Card.Section className={cx(classes.section, classes.stretch)} mt="md">
         <Text>{product.description}</Text>
       </Card.Section>
 

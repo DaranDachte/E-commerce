@@ -4,6 +4,8 @@ export const useStyles = createStyles((theme) => ({
   card: {
     backgroundColor:
       theme.colorScheme === "dark" ? theme.colors.dark[7] : theme.white,
+    display: "flex",
+    flexDirection: "column",
   },
 
   imageSection: {
@@ -38,5 +40,8 @@ export const useStyles = createStyles((theme) => ({
       theme.colorScheme === "dark"
         ? theme.colors.dark[2]
         : theme.colors.gray[5],
+  },
+  stretch: {
+    flex: 1,
   },
 }));

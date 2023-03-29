@@ -10,7 +10,7 @@ const CategoriesList = ({ categories, activeCategory, onCategoryClick }) => {
   };
 
   return (
-    <div>
+    <div className={classes.wrapper}>
       <Group mb="md">
         <IconListSearch size="1.1rem" stroke={1.5} />
         <Text>Categories</Text>

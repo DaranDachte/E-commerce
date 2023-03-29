@@ -1,5 +1,11 @@
-import { createStyles, rem } from "@mantine/core";
+import { createStyles } from "@mantine/core";
 export const useStyles = createStyles((theme) => ({
+  wrapper: {
+    width: "15%",
+    padding: theme.spacing.md,
+    border: `1px solid ${theme.colors.gray[3]}`,
+    borderRadius: theme.radius.md,
+  },
   category: {
     ...theme.fn.focusStyles(),
     display: "block",
@@ -10,9 +16,7 @@ export const useStyles = createStyles((theme) => ({
     padding: theme.spacing.xs,
     borderTopRightRadius: theme.radius.sm,
     borderBottomRightRadius: theme.radius.sm,
-    borderLeft: `${rem(1)} solid ${
-      theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[3]
-    }`,
+    cursor: "pointer",
 
     "&:hover": {
       backgroundColor:

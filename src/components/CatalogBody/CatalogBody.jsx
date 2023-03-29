@@ -59,7 +59,9 @@ const CatalogBody = () => {
         activeCategory={activeCategory}
         onCategoryClick={onCategoryClick}
       />
-      <ProductsList products={products} />
+      <div className={classes.productsStretch}>
+        <ProductsList products={products} />
+      </div>
     </div>
   );
 };
