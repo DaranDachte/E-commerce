@@ -1,5 +1,6 @@
 import { Box, Text, Group } from "@mantine/core";
 import { IconListSearch } from "@tabler/icons-react";
+import Loader from "../Loader";
 import { useStyles } from "./CategoriesList.style";
 
 const CategoriesList = ({ categories, activeCategory, onCategoryClick }) => {
@@ -30,7 +31,7 @@ const CategoriesList = ({ categories, activeCategory, onCategoryClick }) => {
           );
         })
       ) : (
-        <h1>Loading</h1>
+        <Loader />
       )}
     </div>
   );
