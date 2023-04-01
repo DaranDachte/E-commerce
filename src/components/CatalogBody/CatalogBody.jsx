@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import CategoriesList from "../CategoriesList";
 import ProductsList from "../ProductsList";
+import ErrorBanner from "../ErrorBanner/ErrorBanner";
 import { useStyles } from "./CatalogBody.style";
 
 const CatalogBody = () => {
@@ -15,7 +16,7 @@ const CatalogBody = () => {
     const fetchData = async () => {
       try {
         const { data: categoriesFromAPI } = await axios.get(
-          "https://dummyjson.com/products/categories"
+          "https://dummyjson.com//categories"
         );
         setCategories(categoriesFromAPI);
         setActiveCategory(categoriesFromAPI[0]);
@@ -49,7 +50,10 @@ const CatalogBody = () => {
   };
 
   if (error) {
-    return <h1>{error}</h1>;
+    /*
+    Make ErrorBanner component to accept error message as a prop
+    */
+    return <ErrorBanner error={error} />;
   }
 
   return (
