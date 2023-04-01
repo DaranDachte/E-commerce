@@ -1,3 +1,4 @@
+import Loader from "../Loader";
 import ProductCard from "../ProductCard";
 import { useStyles } from "./ProductsList.style";
 
@@ -14,7 +15,7 @@ const ProductsList = ({ products }) => {
           })}
         </div>
       ) : (
-        <h2>Loading</h2>
+        <Loader />
       )}
     </div>
   );
