@@ -16,7 +16,7 @@ const CatalogBody = () => {
     const fetchData = async () => {
       try {
         const { data: categoriesFromAPI } = await axios.get(
-          "https://dummyjson.com//categories"
+          "https://dummyjson.com/products/categories"
         );
         setCategories(categoriesFromAPI);
         setActiveCategory(categoriesFromAPI[0]);
@@ -50,9 +50,6 @@ const CatalogBody = () => {
   };
 
   if (error) {
-    /*
-    Make ErrorBanner component to accept error message as a prop
-    */
     return <ErrorBanner error={error} />;
   }
 
