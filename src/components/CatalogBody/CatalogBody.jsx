@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import CategoriesList from "../CategoriesList";
 import ProductsList from "../ProductsList";
+import ErrorBanner from "../ErrorBanner/ErrorBanner";
 import { useStyles } from "./CatalogBody.style";
 
 const CatalogBody = () => {
@@ -49,7 +50,7 @@ const CatalogBody = () => {
   };
 
   if (error) {
-    return <h1>{error}</h1>;
+    return <ErrorBanner error={error} />;
   }
 
   return (
