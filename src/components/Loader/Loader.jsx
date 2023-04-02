@@ -1,9 +1,9 @@
 import { Loader as MantineLoader } from "@mantine/core";
 
-const Loader = () => {
+const Loader = (props) => {
   return (
     <div>
-      <MantineLoader />
+      <MantineLoader {...props} />
     </div>
   );
 };

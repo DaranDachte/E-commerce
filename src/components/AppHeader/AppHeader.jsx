@@ -1,3 +1,4 @@
+import SearchBar from "../SearchBar";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
@@ -52,6 +53,7 @@ const AppHeader = () => {
     <Header height={HEADER_HEIGHT} mb={20} className={classes.root}>
       <Container className={classes.header}>
         <Logo />
+        <SearchBar />
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
