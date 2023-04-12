@@ -1,12 +1,15 @@
 import { Card, Image, Text, Group, Badge, Button } from "@mantine/core";
 import { IconShoppingCartPlus } from "@tabler/icons-react";
 import { useStyles } from "./ProductCard.style";
-
+import { useNavigate } from "react-router-dom";
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
   const { classes, cx } = useStyles();
-
+  const clickOnCard = () => {
+    navigate(`/products/${product.id}`);
+  };
   return (
-    <Card withBorder radius="md" className={classes.card}>
+    <Card onClick={clickOnCard} withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
         <Image
           height={150}
