@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import CategoriesList from "../CategoriesList";
 import ProductsList from "../ProductsList";
-import ErrorBanner from "../ErrorBanner/ErrorBanner";
+import ErrorBanner from "../ErrorBanner";
 import { useStyles } from "./CatalogBody.style";
 
 const CatalogBody = () => {
