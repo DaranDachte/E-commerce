@@ -1,62 +1,88 @@
+import { useForm } from "@mantine/form";
 import { useStyles } from "./Contact.style";
-import {
-  Paper,
-  Text,
-  TextInput,
-  Textarea,
-  Button,
-  Group,
-  SimpleGrid,
-} from "@mantine/core";
+import { Text, TextInput, Textarea, Button, Group, Image } from "@mantine/core";
 
+import contactFormImage from "../../assets/img/contactFormImage.svg";
 const Contact = () => {
   const { classes } = useStyles();
 
+  const form = useForm({
+    initialValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+
+    validate: {
+      name: (value) => (value.length < 2 ? "" : null),
+      email: (value) => (/^\S+@\S+$/.test(value) ? null : ""),
+      message: (value) => (value.length < 10 ? "" : null),
+    },
+  });
+
+  /* 
+  1. Remove Subject field
+  2. Make all fields required
+  3. Get rid of grid
+  4. Add "description" prop with text which is in the picture to Text Inputs
+  5. Pass a callback function to onChange event which will trigger form.setFieldValue("", value);
+  6. Make Submit button disabled when form is not valid
+  */
   return (
-    <Paper shadow="md" radius="lg">
+    <div className={classes.contact}>
       <div className={classes.wrapper}>
-        <div className={classes.contacts}>
-          <Text fz="lg" fw={700} className={classes.title} c="#fff">
-            Contact information
-          </Text>
-        </div>
+        <Image maw={300} src={contactFormImage} />
 
         <form
+          action="https://formsubmit.co/darandachte@gmail.com"
+          method="POST"
           className={classes.form}
-          onSubmit={(event) => event.preventDefault()}
         >
           <Text fz="lg" fw={700} className={classes.title}>
             Get in touch
           </Text>
 
           <div className={classes.fields}>
-            <SimpleGrid cols={2} breakpoints={[{ maxWidth: "sm", cols: 1 }]}>
-              <TextInput label="Your name" placeholder="Your name" />
-              <TextInput
-                label="Your email"
-                placeholder="hello@mantine.dev"
-                required
-              />
-            </SimpleGrid>
-
-            <TextInput mt="md" label="Subject" placeholder="Subject" required />
-
+            <TextInput
+              label="Your name"
+              placeholder="Your name"
+              required
+              description="Name must have two or more characters"
+              onChange={(e) => form.setFieldValue("name", e.target.value)}
+              name="name"
+            />
+            <TextInput
+              label="Your email"
+              placeholder="hello@mantine.dev"
+              required
+              mt="md"
+              onChange={(e) => form.setFieldValue("email", e.target.value)}
+              name="email"
+            />
             <Textarea
               mt="md"
               label="Your message"
               placeholder="Please include all relevant information"
               minRows={3}
+              required
+              description="Message must have ten or more characters"
+              onChange={(e) => form.setFieldValue("message", e.target.value)}
+              name="message"
             />
 
             <Group position="right" mt="md">
-              <Button type="submit" className={classes.control}>
+              <Button
+                disabled={!form.isValid()}
+                type="submit"
+                className={classes.control}
+              >
                 Send message
               </Button>
             </Group>
           </div>
         </form>
       </div>
-    </Paper>
+    </div>
   );
 };
 
