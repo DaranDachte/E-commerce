@@ -18,5 +18,6 @@ The favicon was created using https://favicon.io/
 
 Photos were taken from several free resources.
 
+I sent the completed form to https://formsubmit.co/
 
 
