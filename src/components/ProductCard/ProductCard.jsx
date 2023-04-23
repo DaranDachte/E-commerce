@@ -1,5 +1,5 @@
-import { Card, Image, Text, Group, Badge, Button } from "@mantine/core";
-import { IconShoppingCartPlus } from "@tabler/icons-react";
+import { Card, Image, Text, Group, Badge } from "@mantine/core";
+
 import { useStyles } from "./ProductCard.style";
 import { useNavigate } from "react-router-dom";
 const ProductCard = ({ product }) => {
@@ -32,19 +32,12 @@ const ProductCard = ({ product }) => {
 
       <Card.Section className={classes.section}>
         <Group spacing={30}>
-          <div>
-            <Text fz="xl" fw={700} sx={{ lineHeight: 1 }}>
-              {product.price} €
-            </Text>
-          </div>
-
-          <Button
-            radius="xl"
-            style={{ flex: 1 }}
-            leftIcon={<IconShoppingCartPlus />}
-          >
-            Add to the cart
-          </Button>
+          <Text fz="xl" fw={700} sx={{ lineHeight: 1 }}>
+            {product.price} €
+          </Text>
+          <Text ml="auto" fw={500}>
+            Rating: {product.rating}⭐
+          </Text>
         </Group>
       </Card.Section>
     </Card>
