@@ -23,8 +23,8 @@ I sent the completed form to https://formsubmit.co/
 
 Photos were taken from several free resources.
 
-![](https://commonmark.org/help/images/favicon.png)
 
+![]("D:\Repo\e-commerce\src\assets\img\logoColor.jpg")
 
 
 
