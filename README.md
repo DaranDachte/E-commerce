@@ -1,4 +1,4 @@
-Hello. My name is Daran Dahte. I live in West Germany, in the Düsseldorf area and do Web Development. In my work I use:
+Hello. My name is Daran Daсhte. I live in West Germany, in the Düsseldorf area and do Web Development. In my work I use:
 <ul>
  <li>-HTML</li>
  <li>-CSS</li>
