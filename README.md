@@ -10,7 +10,7 @@ In this project, I decided to study how the <b>Mantine UI</b> framework works an
 
 I also used the site https://dummyjson.com/ to send requests and get the data necessary for work.
 
-I took the icons from the tabler-icons-react library at https://tabler-icons-react.vercel.app/
+I took the icons from the tabler-icons-react library at https://tabler-icons.io/
 
 I found the illustrations on the site https://undraw.co/
 
