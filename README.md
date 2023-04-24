@@ -6,7 +6,7 @@ Hello. My name is Daran Dahte. I live in West Germany, in the Düsseldorf area a
  <li>-React</li>
  <li>-Typescript…</li>
  </ul>
-In this project, I decided to study how the <b>Mantin UI</b> framework works and create an E-Commerce website using it. I liked the Mantin and I hope to do another project with it to consolidate the knowledge gained. https://mantine.dev/
+In this project, I decided to study how the <b>Mantine UI</b> framework works and create an E-Commerce website using it. I liked the Mantine and I hope to do another project with it to consolidate the knowledge gained. https://mantine.dev/
 
 I also used the site https://dummyjson.com/ to send requests and get the data necessary for work.
 
