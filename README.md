@@ -9,13 +9,13 @@ Hello. My name is Daran Daсhte. I live in West Germany, in the Düsseldorf area
 
 In this project, I decided to study how the <b>Mantine UI</b> framework works and created an E-Commerce website using it. I liked the Mantine and I hope to do another project with it to consolidate the knowledge gained.  https://mantine.dev/ [](http://a.com)
 
-I also used the site https://dummyjson.com/ to send requests and get the data necessary for work.
+I also used the website https://dummyjson.com/ to send requests and get the data necessary for work.
 
 I took the icons from the tabler-icons-react library at https://tabler-icons.io/
 
-I found the illustrations on the site https://undraw.co/
+I found the illustrations on the website https://undraw.co/
 
-I created my logo using the site https://logo.com/
+I created my logo using the website https://logo.com/
 
 The favicon was created using https://favicon.io/
 
