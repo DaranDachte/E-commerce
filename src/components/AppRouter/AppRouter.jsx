@@ -4,6 +4,7 @@ import Contact from "../../pages/Contact";
 import About from "../../pages/About";
 import Catalog from "../../pages/Catalog";
 import ProductDetails from "../ProductDetails/ProductDetails";
+import Cart from "../../pages/Cart";
 
 const AppRouter = () => {
   return (
@@ -12,6 +13,7 @@ const AppRouter = () => {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/products/:productId" element={<ProductDetails />} />
+      <Route path="/cart" element={<Cart />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

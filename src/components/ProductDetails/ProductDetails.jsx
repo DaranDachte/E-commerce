@@ -43,7 +43,28 @@ const ProductDetails = () => {
 1. if error happens return ErrorBanner with error prop
 2. if isLoading is true return <Loader />
 3. else return product title
+4. Add onClick handler which will update cart items array by adding product id
 */
+  const updateCart = () => {
+    /*How to update array of cart items:
+    1. get this string from localStorage
+    2. check if it's not undefined
+    3. Parse string by using JSON.parse method (string -> array)
+    4. Update cart item by updating array and turning into string by JSON.stringify method (array -> string)
+     */
+    const cart = localStorage.getItem("cart");
+    let cartItems;
+    if (cart) {
+      cartItems = JSON.parse(cart);
+    } else cartItems = [];
+
+    // const cartItems = localStorage.getItem("cart")
+    //   ? JSON.parse(localStorage.getItem("cart"))
+    //   : [];
+    localStorage.setItem("cart", JSON.stringify([...cartItems, productId]));
+    navigate(0);
+  };
+
   const backButtonClick = () => {
     navigate(-1);
   };
@@ -85,7 +106,12 @@ const ProductDetails = () => {
             <Text mt="xs" fw={500}>
               Rating: {product.rating}⭐
             </Text>
-            <Button mt="xs" radius="xl" leftIcon={<IconShoppingCartPlus />}>
+            <Button
+              onClick={updateCart}
+              mt="xs"
+              radius="xl"
+              leftIcon={<IconShoppingCartPlus />}
+            >
               Add to Cart
             </Button>
           </div>
