@@ -1,4 +1,4 @@
-import { Text, Title, TextInput, Button, Image } from "@mantine/core";
+import { Text, Title, Image } from "@mantine/core";
 
 import { useStyles } from "./ErrorBanner.style";
 import errorImage from "../../assets/img/Error.svg";

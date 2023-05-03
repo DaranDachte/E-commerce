@@ -5,7 +5,7 @@ import aus1 from "../../assets/img/aus1.jpg";
 import aus2 from "../../assets/img/aus2.jpg";
 import aus3 from "../../assets/img/aus3.jpg";
 import aus4 from "../../assets/img/aus4.jpg";
-import Logo from "../Logo";
+
 const CardCarousel = () => {
   const { classes } = useStyles();
 
