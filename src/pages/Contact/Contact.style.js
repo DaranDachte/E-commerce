@@ -50,7 +50,7 @@ export const useStyles = createStyles((theme) => {
       },
     },
     contact: {
-      height: "80vh",
+      flex: 1,
     },
 
     title: {

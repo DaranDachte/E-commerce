@@ -3,6 +3,7 @@ export const useStyles = createStyles((theme) => ({
   root: {
     paddingTop: rem(80),
     paddingBottom: rem(80),
+    flex: 1,
   },
 
   label: {

@@ -1,10 +1,13 @@
 import { createStyles } from "@mantine/core";
 export const useStyles = createStyles((theme) => ({
-  wrapper: {
-    width: "15%",
+  desktopWrapper: {
     padding: theme.spacing.md,
     border: `1px solid ${theme.colors.gray[3]}`,
     borderRadius: theme.radius.md,
+
+    "@media screen and (max-width: 760px)": {
+      display: "none",
+    },
   },
   category: {
     ...theme.fn.focusStyles(),
@@ -38,6 +41,12 @@ export const useStyles = createStyles((theme) => ({
         theme.colorScheme === "dark"
           ? theme.fn.rgba(theme.colors[theme.primaryColor][9], 0.25)
           : theme.colors[theme.primaryColor][0],
+    },
+  },
+  mobileWrapper: {
+    display: "none",
+    "@media screen and (max-width: 760px)": {
+      display: "block",
     },
   },
 }));
