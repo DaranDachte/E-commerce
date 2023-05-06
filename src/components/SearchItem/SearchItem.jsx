@@ -10,8 +10,6 @@ const SearchItem = forwardRef(
       navigate(`/products/${id}`);
     };
 
-    console.log(others);
-
     return (
       <div ref={ref} onMouseDown={onMouseDownHandler} {...others}>
         <Group noWrap>
