@@ -6,9 +6,13 @@ import AppFooter from "./components/AppFooter";
 const App = () => {
   return (
     <BrowserRouter>
-      <AppHeader />
-      <AppRouter />
-      <AppFooter />
+      <div
+        style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      >
+        <AppHeader />
+        <AppRouter />
+        <AppFooter />
+      </div>
     </BrowserRouter>
   );
 };

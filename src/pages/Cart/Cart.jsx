@@ -1,16 +1,19 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router";
 import { Text, Box } from "@mantine/core";
 import CartItem from "../../components/CartItem";
 import ErrorBanner from "../../components/ErrorBanner";
 import Loader from "../../components/Loader";
-import { useNavigate } from "react-router";
+import { useStyles } from "./Cart.style";
 
 const Cart = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const { classes } = useStyles();
+
   useEffect(() => {
     const cart = localStorage.getItem("cart");
     if (cart) {
@@ -66,9 +69,10 @@ const Cart = () => {
 
   if (products.length) {
     return (
-      <Box maw={980} mx="auto">
+      <Box maw={980} mx="auto" className={classes.wrapper}>
         {products.map((product, index) => (
           <CartItem
+            key={product.id}
             product={product}
             onRemoveCartItem={(e) => onRemoveCartItem(index)}
           />

@@ -78,13 +78,22 @@ const ProductDetails = () => {
   if (product) {
     return (
       <div className={classes.wrapper}>
+        <Button
+          mt="xs"
+          mb="xl"
+          onClick={backButtonClick}
+          leftIcon={<IconArrowNarrowLeft />}
+          variant="outline"
+        >
+          Back
+        </Button>
         <Title order={2}>{product.title}</Title>
         <div className={classes.flex}>
           <div className={classes.leftSection}>
             <Carousel loop mt="1rem" withIndicators>
               {product.images.map((imageSrc) => {
                 return (
-                  <Carousel.Slide>
+                  <Carousel.Slide key={imageSrc}>
                     <Image
                       fit="contain"
                       height={500}
@@ -120,11 +129,6 @@ const ProductDetails = () => {
   1. component <Button/> with icon left arrow and text "Back"
   2. make onClick this button to navigate to -1
   */}
-        <div className={classes.backButton}>
-          <Button onClick={backButtonClick} leftIcon={<IconArrowNarrowLeft />}>
-            Back
-          </Button>
-        </div>
       </div>
     );
   }

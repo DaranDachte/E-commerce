@@ -2,7 +2,7 @@ import { createStyles } from "@mantine/core";
 
 export const useStyles = createStyles((theme) => ({
   wrapper: {
-    height: "80vh",
+    flex: 1,
   },
   flex: {
     display: "flex",

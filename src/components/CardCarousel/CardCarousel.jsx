@@ -10,7 +10,7 @@ const CardCarousel = () => {
   const { classes } = useStyles();
 
   return (
-    <Carousel width="100%" mx="auto" height={400}>
+    <Carousel width="100%" mx="auto" height={400} loop>
       <Carousel.Slide>
         <div className={classes.card}>
           <div className={classes.werbung}>
