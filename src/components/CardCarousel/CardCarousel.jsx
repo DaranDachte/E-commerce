@@ -15,9 +15,8 @@ const CardCarousel = () => {
         <div className={classes.card}>
           <div className={classes.werbung}>
             <h2>
-              Здесь будет слоган. Его будет очень много, он заполнит все
-              пространство. И не понятно, что здесь писать, потому что места еще
-              больше.
+              A place for a promotional slogan/action - for example, a Christmas
+              sale or a New collection.
             </h2>
           </div>
           <div className={classes.imageWrapper}>
@@ -29,9 +28,8 @@ const CardCarousel = () => {
         <div className={classes.card}>
           <div className={classes.werbung}>
             <h2>
-              Здесь будет слоган. Его будет очень много, он заполнит все
-              пространство. И не понятно, что здесь писать, потому что места еще
-              больше.
+              A place for a promotional slogan/action - for example, a Christmas
+              sale or a New collection.
             </h2>
           </div>
           <div className={classes.imageWrapper}>
@@ -43,9 +41,8 @@ const CardCarousel = () => {
         <div className={classes.card}>
           <div className={classes.werbung}>
             <h2>
-              Здесь будет слоган. Его будет очень много, он заполнит все
-              пространство. И не понятно, что здесь писать, потому что места еще
-              больше.
+              A place for a promotional slogan/action - for example, a Christmas
+              sale or a New collection.
             </h2>
           </div>
           <div className={classes.imageWrapper}>
@@ -57,9 +54,8 @@ const CardCarousel = () => {
         <div className={classes.card}>
           <div className={classes.werbung}>
             <h2>
-              Здесь будет слоган. Его будет очень много он заполнит все
-              пространство. И не понятно, что здесь писать, потому что места еще
-              больше.
+              A place for a promotional slogan/action - for example, a Christmas
+              sale or a New collection.
             </h2>
           </div>
           <div className={classes.imageWrapper}>
