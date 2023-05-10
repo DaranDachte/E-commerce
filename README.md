@@ -1,4 +1,5 @@
-Hello. My name is Daran Daсhte. I live in West Germany, in the Düsseldorf area and do Web Development. In this work I used:
+Hello. My name is Daran Daсhte. I live in West Germany, in the Düsseldorf area and do Web Development. I decided to create this site to improve my knowledge of building E-commerce sites. By following this link, you can see how this site works https://main--timely-peony-f0a59f.netlify.app/
+In this work I used:
 <ul>
  <li>HTML</li>
  <li>CSS</li>
