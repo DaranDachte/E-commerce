@@ -4,7 +4,7 @@ Hello. My name is Daran Daсhte. I live in West Germany, in the Düsseldorf area
  <li>-CSS</li>
  <li>-Java Script</li>
  <li>-React</li>
- <li>-Typescript…</li>
+
  </ul>
 
 In this project, I decided to study how the <b>Mantine UI</b> framework works and created an E-Commerce website using it. I liked the Mantine and I hope to do another project with it to consolidate the knowledge gained.  https://mantine.dev/ [](http://a.com)
