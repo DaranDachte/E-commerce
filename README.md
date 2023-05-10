@@ -1,9 +1,9 @@
 Hello. My name is Daran Daсhte. I live in West Germany, in the Düsseldorf area and do Web Development. In my work I use:
 <ul>
- <li>-HTML</li>
- <li>-CSS</li>
- <li>-Java Script</li>
- <li>-React</li>
+ <li>HTML</li>
+ <li>CSS</li>
+ <li>Java Script</li>
+ <li>React</li>
 
  </ul>
 
