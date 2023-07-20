@@ -1,13 +1,6 @@
 Hello. My name is Daran Daсhte. I live in West Germany, in the Düsseldorf area and do Web Development. I decided to create this site to improve my knowledge of building E-Commerce sites. By following this link, you can see how this site works <a href="https://main--timely-peony-f0a59f.netlify.app/" target="_blank">E-Commerce</a>
 
-In this work I used:
-<ul>
- <li>HTML</li>
- <li>CSS</li>
- <li>Java Script</li>
- <li>React</li>
 
- </ul>
 
 In this project, I decided to study how the <b>Mantine UI</b> framework works and created an E-Commerce website using it. I liked the Mantine and I hope to do another project with it to consolidate the knowledge gained.  https://mantine.dev/ [](http://a.com)
 
