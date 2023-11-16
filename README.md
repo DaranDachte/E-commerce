@@ -19,7 +19,16 @@ I sent the completed form to https://formsubmit.co/
 Photos were taken from several free resources.
 
 
-![logoColor](https://user-images.githubusercontent.com/96144068/234046629-d073245e-5596-4b09-8334-cf94d2beb69a.jpg)
+![HomePage](https://github.com/DaranDachte/e-commerce/assets/96144068/30728f35-4917-4977-897e-c03e5102b87f)
+
+![Search](https://github.com/DaranDachte/e-commerce/assets/96144068/25c8e008-c764-479a-a165-f7530019dfde)
+
+![Item](https://github.com/DaranDachte/e-commerce/assets/96144068/48af72cc-cd54-4eb2-9697-ef1fe543297f)
+
+![Basket](https://github.com/DaranDachte/e-commerce/assets/96144068/0b1f43db-25f1-45a1-9a8c-6f566bcd96e7)
+
+![Contact](https://github.com/DaranDachte/e-commerce/assets/96144068/f001c702-61b8-4d1b-a5c0-0a55b7c02b7b)
+
 
 
 
